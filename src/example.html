@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+  <p><img src="image/megane.jpg" width="320" height="240" /></p>
+  <p><img src="image/megane.jpg" width="320" height="240" /></p>
+  <p><img src="image/megane.jpg" width="320" height="240" /></p>
+</div>
+<div><img src="image/megane.jpg" id="image1" width="320" height="240" /></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="js/jquery.imageRandomRotator.js"></script>
+<script>
+$(function() {
+  $('#box').randomRotateImage({"margin-top": "200px"});
+  $('#image1').randomRotate({"padding": "15px"});
+});
+</script>
+</body>
+</html>
